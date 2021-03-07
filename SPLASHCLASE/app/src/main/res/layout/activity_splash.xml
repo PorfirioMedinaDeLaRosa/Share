@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/facebook1" />
+
+    <TextView
+        android:id="@+id/txtnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imglogo"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Facebook"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtnombre"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/black"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtdesarrollador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/progressBar"
+        android:text="Ing. Porfirio Medina De La Rosa"
+        android:gravity="center_horizontal" />
+</RelativeLayout>
